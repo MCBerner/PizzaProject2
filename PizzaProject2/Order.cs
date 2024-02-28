@@ -60,7 +60,7 @@ namespace PizzaProject2
             get { return _totalCosts; }
             set { _totalCosts = value;}
         }
-        public void CreatePizza(int orderID, int pizzaID, int customerID, int tax, int deliveryCosts,int totalCosts)
+        public void CreateOrder(int orderID, int pizzaID, int customerID, int tax, int deliveryCosts,int totalCosts)
         {
             //_pizzaID++;
             _orderID = orderID;
