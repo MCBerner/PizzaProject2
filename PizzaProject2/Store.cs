@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PizzaProject2
 {
-    internal class Store
+    public class Store
     {
         public Store()  
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PizzaProject2
 {
-    internal class Order
+    public class Order
     {
         public Order()
         {

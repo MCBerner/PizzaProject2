@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PizzaProject2
 {
-    internal class Pizza
+    public class Pizza
     {
         string _name;
         int _price;
