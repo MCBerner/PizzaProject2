@@ -18,6 +18,7 @@ namespace PizzaProject2
         double _tax;
         int _deliveryCosts;
         int _totalCosts;
+        double _taxOffTotalPrice;
 
         public Order()
         {
@@ -27,9 +28,11 @@ namespace PizzaProject2
             _tax = 0.25;
             _deliveryCosts = 40;
             _totalCosts = 0;
-            
+            _taxOffTotalPrice = 0;  
 
         }
+
+        //Properties
         public int OrderID 
         {
             get { return _orderID; }
@@ -60,22 +63,39 @@ namespace PizzaProject2
             get { return _totalCosts; }
             set { _totalCosts = value;}
         }
-        public void CreateOrder(int orderID, Pizza pizza, Customer customer, double tax, int deliveryCosts,int totalCosts)
+
+        public double TaxOffTotalPrice 
+        {
+            get { return _taxOffTotalPrice; }
+            set { _taxOffTotalPrice = value;}
+        }
+
+
+        public void CreateOrder(int orderID, Pizza pizza, Customer customer)
         {
             //_pizzaID++;
             _orderID = orderID;
             _pizza = pizza;
             _customer = customer;
-            _tax = tax;
-            _deliveryCosts = deliveryCosts;
-            _totalCosts = totalCosts;
+            _totalCosts = CalculateTotalCosts(pizza.Price, DeliveryCosts);
+            _taxOffTotalPrice = CalculateTaxOffTotalPrice();
 
         }
+        public int CalculateTotalCosts(int pizzaPrice, int deliveryCosts) 
+        {
+            return pizzaPrice + deliveryCosts;
+        }
+
+        public double CalculateTaxOffTotalPrice()
+        {
+            return TotalCosts * Tax;
+        }
+
 
 
         public override string ToString()
         {
-            return $"Ordrer.nr.: {OrderID} - \n{Pizza} - \n{Customer} - \nTotalCosts: {TotalCosts} ";
+            return $"Ordrer.nr.: {OrderID}  \n{Customer}  \n{Pizza}  \nTotalCosts: {TotalCosts} \nMoms af totalprisen: {TaxOffTotalPrice} ";
         }
     }
 }

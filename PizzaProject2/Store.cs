@@ -11,14 +11,14 @@ namespace PizzaProject2
         public Store()  //Constructor
         {
 
-            //Pizza pizzaKebab = new Pizza();
-            //pizzaKebab.PizzaID = 1;
-            //pizzaKebab.Name = "Kebab pizza";
-            //pizzaKebab.Description = "Pizza med kebab, tomat og ost...";
-            //pizzaKebab.Price = 95;
-
             Pizza pizzaKebab = new Pizza();
-            pizzaKebab.CreatePizza(1, "Kebab pizza", "Pizza med kebab, tomat og ost...", 95);
+            pizzaKebab.PizzaID = 1;
+            pizzaKebab.Name = "Kebab pizza";
+            pizzaKebab.Description = "Pizza med kebab, tomat og ost...";
+            pizzaKebab.Price = 95;
+
+            //Pizza pizzaKebab = new Pizza();
+            //pizzaKebab.CreatePizza(1, "Kebab pizza", "Pizza med kebab, tomat og ost...", 95);
 
             Pizza pizzaCalzone = new Pizza();
             pizzaCalzone.CreatePizza(2, "Calzone pizza", "Lukket pizza med kødsovs", 105);
@@ -57,7 +57,7 @@ namespace PizzaProject2
             order1.TotalCosts = 0;*/
 
             Order order1 = new Order();
-            order1.CreateOrder(1, pizzaKebab, anders, 0.25, 40, 0);
+            order1.CreateOrder(1, pizzaKebab, anders);
 
             Order order2 = new Order();
             order2.OrderID = 2;
