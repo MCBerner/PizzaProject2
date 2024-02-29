@@ -60,21 +60,10 @@ namespace PizzaProject2
             order1.CreateOrder(1, pizzaKebab, anders);
 
             Order order2 = new Order();
-            order2.OrderID = 2;
-            order2.Pizza = pizzaCalzone;
-            order2.Customer = juliette;
-            order2.Tax = 0.25;
-            order2.DeliveryCosts =
-            order2.TotalCosts = 0;
+            order2.CreateOrder(2, pizzaCalzone, juliette);
 
             Order order3 = new Order();
-            order3.OrderID = 3;
-            order3.Pizza = pizzaMexican;
-            order3.Customer = anders;
-            order3.Tax = 0.25;
-            order3.DeliveryCosts =
-            order3.TotalCosts = 0;
-
+            order3.CreateOrder(3, pizzaMexican, henrik);
 
 
 

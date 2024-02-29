@@ -77,13 +77,13 @@ namespace PizzaProject2
             _orderID = orderID;
             _pizza = pizza;
             _customer = customer;
-            _totalCosts = CalculateTotalCosts(pizza.Price, DeliveryCosts);
+            _totalCosts = CalculateTotalCosts(pizza.Price);
             _taxOffTotalPrice = CalculateTaxOffTotalPrice();
 
         }
-        public int CalculateTotalCosts(int pizzaPrice, int deliveryCosts) 
+        public int CalculateTotalCosts(int pizzaPrice) 
         {
-            return pizzaPrice + deliveryCosts;
+            return pizzaPrice + DeliveryCosts;
         }
 
         public double CalculateTaxOffTotalPrice()
