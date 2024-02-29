@@ -75,7 +75,7 @@ namespace PizzaProject2
 
         public override string ToString()
         {
-            return $"Ordrer.nr.: {OrderID} - {Pizza} - {Customer} - TotalCosts: {TotalCosts} ";
+            return $"Ordrer.nr.: {OrderID} - \n{Pizza} - \n{Customer} - \nTotalCosts: {TotalCosts} ";
         }
     }
 }
