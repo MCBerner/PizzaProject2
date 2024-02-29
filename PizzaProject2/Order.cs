@@ -13,18 +13,18 @@ namespace PizzaProject2
     public class Order
     { 
         int _orderID;
-        int _pizzaID;
-        int _customerID;
-        int _tax;
+        Pizza _pizza;
+        Customer _customer;
+        double _tax;
         int _deliveryCosts;
         int _totalCosts;
 
         public Order()
         {
             _orderID = 0;
-            _pizzaID = 0;
-            _customerID = 0;
-            _tax = 25;
+            _pizza = null;
+            _customer = null;
+            _tax = 0.25;
             _deliveryCosts = 40;
             _totalCosts = 0;
             
@@ -35,20 +35,20 @@ namespace PizzaProject2
             get { return _orderID; }
             set { _orderID = value; }
         }
-        public int PizzaID 
+        public  Pizza Pizza  
         {
-            get { return _pizzaID; }
-            set { _pizzaID = value;}
+            get { return _pizza; }
+            set { _pizza = value;}
         }
-        public int CustomerID 
+        public Customer Customer 
         {
-            get { return _customerID; }
-            set { _customerID = value;}
+            get { return _customer; }
+            set { _customer = value;}
         }
-        public int Tax 
+        public double Tax 
         {
             get { return _tax; }
-
+            set { _tax = value;}
         }
         public int DeliveryCosts 
         {
@@ -60,20 +60,22 @@ namespace PizzaProject2
             get { return _totalCosts; }
             set { _totalCosts = value;}
         }
-        public void CreateOrder(int orderID, int pizzaID, int customerID, int tax, int deliveryCosts,int totalCosts)
+        public void CreateOrder(int orderID, Pizza pizza, Customer customer, double tax, int deliveryCosts,int totalCosts)
         {
             //_pizzaID++;
             _orderID = orderID;
-            _pizzaID = pizzaID;
-            _customerID = customerID;
+            _pizza = pizza;
+            _customer = customer;
             _tax = tax;
             _deliveryCosts = deliveryCosts;
             _totalCosts = totalCosts;
 
         }
+
+
         public override string ToString()
         {
-            return $"OrderID: {OrderID} - PizzaID: {PizzaID} - CustomerID: {CustomerID} - TotalCosts: {TotalCosts} ";
+            return $"OrderID: {OrderID} - PizzaID: {Pizza} - CustomerID: {Customer} - TotalCosts: {TotalCosts} ";
         }
     }
 }

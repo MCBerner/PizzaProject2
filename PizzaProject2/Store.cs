@@ -32,8 +32,18 @@ namespace PizzaProject2
             anders.Address = "Strandvejen 1";
             anders.PhoneNumber = 33445566;
 
+            Order order1 = new Order();
+            order1.OrderID = 1;
+            order1.Pizza = pizzaKebab;
+            order1.Customer = anders;
+            order1.Tax = 0.25;
+            order1.DeliveryCosts =
+            order1.TotalCosts = 0;
+
+
             Console.WriteLine(anders.ToString());
             Console.WriteLine(pizzakebabstring);
+            Console.WriteLine(order1.ToString());
             Console.WriteLine("");
 
             Console.WriteLine(pizzaCalzone.ToString());
