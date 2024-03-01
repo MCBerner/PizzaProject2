@@ -67,27 +67,27 @@ namespace PizzaProject2
 
 
 
-            Console.WriteLine(anders.ToString());
+            Console.WriteLine(anders);
             Console.WriteLine("");
-            Console.WriteLine(pizzakebabstring.ToString());
+            Console.WriteLine(pizzakebabstring);
             Console.WriteLine("");
-            Console.WriteLine(order1.ToString());
-            Console.WriteLine("");
-            Console.WriteLine("");
-
-            Console.WriteLine(juliette.ToString());
-            Console.WriteLine("");
-            Console.WriteLine(pizzacalzonestring.ToString());
-            Console.WriteLine("");
-            Console.WriteLine(order2.ToString());
+            Console.WriteLine(order1);
             Console.WriteLine("");
             Console.WriteLine("");
 
-            Console.WriteLine(henrik.ToString());
+            Console.WriteLine(juliette);
             Console.WriteLine("");
-            Console.WriteLine(pizzamexicanstring.ToString());
+            Console.WriteLine(pizzacalzonestring);
             Console.WriteLine("");
-            Console.WriteLine(order3.ToString());
+            Console.WriteLine(order2);
+            Console.WriteLine("");
+            Console.WriteLine("");
+
+            Console.WriteLine(henrik);
+            Console.WriteLine("");
+            Console.WriteLine(pizzamexicanstring);
+            Console.WriteLine("");
+            Console.WriteLine(order3);
             Console.WriteLine("");
 
             
