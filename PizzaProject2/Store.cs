@@ -14,7 +14,7 @@ namespace PizzaProject2
             Pizza pizzaKebab = new Pizza();
             pizzaKebab.PizzaID = 1;
             pizzaKebab.Name = "Kebab pizza";
-            pizzaKebab.Description = "Pizza med kebab, tomat og ost...";
+            pizzaKebab.Description = "Pizza med kebab, tomat og ost..";
             pizzaKebab.Price = 95;
 
             //Pizza pizzaKebab = new Pizza();
