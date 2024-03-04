@@ -54,7 +54,12 @@ namespace PizzaProject2
         //overskriver default ToString metoden, så jeg bestemmer min egen med hvad den skal udskrive
         public override string ToString()
         {
-            return $"Pizza nummer: {PizzaID} -  {Name} - Toppings: {Description} - Pris: {Price} ";
+            return $"Pizza nummer: {PizzaID} {Name} - Toppings: {Description} - Pris: {Price} ";
+        }
+
+        public string GetPizzaInfo()
+        {
+            return $"Pizza nummer: {PizzaID} {Name} - Pris: {Price} ";
         }
 
 

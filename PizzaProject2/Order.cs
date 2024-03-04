@@ -95,7 +95,7 @@ namespace PizzaProject2
 
         public override string ToString()
         {
-            return $"Ordrer.nr.: {OrderID}  \n{Customer}  \n{Pizza}  \nTotalCosts: {TotalCosts} \nMoms af totalprisen: {TaxOffTotalPrice} ";
+            return $"Ordrer.nr.: {OrderID}  \n{Customer}  \n{Pizza.GetPizzaInfo()}  \nTotalCosts: {TotalCosts} \nMoms af totalprisen: {TaxOffTotalPrice} ";
         }
     }
 }
