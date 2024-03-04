@@ -53,7 +53,7 @@ namespace PizzaProject2
         }
         public override string ToString() 
         {
-            return $"Kunde.nr.{CustomerID} - Navn: {Name} - Adresse: {Address} - Tlf.nr: {PhoneNumber} ";
+            return $"Kunde.nr.{CustomerID} \nNavn: {Name} \nAdresse: {Address} \nTlf.nr: {PhoneNumber} ";
         }
 
 

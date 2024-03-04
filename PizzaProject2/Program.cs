@@ -7,7 +7,7 @@ namespace PizzaProject2
         static void Main(string[] args)
         {
             Store store = new Store();
-
+            store.Start();
 
 
         }

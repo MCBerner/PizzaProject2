@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,8 +9,12 @@ namespace PizzaProject2
 {
     public class Store
     {
-        public Store()  //Constructor
+        public void Start()
         {
+
+
+
+
 
             Pizza pizzaContadina = new Pizza();
             pizzaContadina.PizzaID = 1;
@@ -32,7 +37,7 @@ namespace PizzaProject2
             anders.CreateCustomer(1, "Anders", "Strandvejen 1", 33445566);
 
             Customer juliette = new Customer();
-            juliette.CreateCustomer(2, "Juliette", "Sommerhuset", 33445678) ;
+            juliette.CreateCustomer(2, "Juliette", "Sommerhuset", 33445678);
 
             Customer henrik = new Customer();
             henrik.CreateCustomer(3, "Henrik", "Svogerslev", 33448899);
@@ -72,14 +77,15 @@ namespace PizzaProject2
             Console.WriteLine(order3);
             Console.WriteLine("");
 
-            
-
-
 
 
 
         }
 
 
-    }
-}
+
+    }    
+
+
+ }
+
