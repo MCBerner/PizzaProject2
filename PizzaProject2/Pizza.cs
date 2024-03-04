@@ -43,7 +43,7 @@ namespace PizzaProject2
 
         public void CreatePizza(int pizzaID, string name, string description, int price)
         {
-            //_pizzaID++;
+            
             _pizzaID = pizzaID;
             _name = name;
             _description = description;

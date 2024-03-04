@@ -11,30 +11,22 @@ namespace PizzaProject2
         public Store()  //Constructor
         {
 
-            Pizza pizzaKebab = new Pizza();
-            pizzaKebab.PizzaID = 1;
-            pizzaKebab.Name = "Kebab pizza";
-            pizzaKebab.Description = "Pizza med kebab, tomat og ost..";
-            pizzaKebab.Price = 95;
+            Pizza pizzaContadina = new Pizza();
+            pizzaContadina.PizzaID = 1;
+            pizzaContadina.Name = "Contadina";
+            pizzaContadina.Description = "Tomat, ost, champignon og oliven";
+            pizzaContadina.Price = 75;
 
-            //Pizza pizzaKebab = new Pizza();
-            //pizzaKebab.CreatePizza(1, "Kebab pizza", "Pizza med kebab, tomat og ost...", 95);
+            Pizza pizzaNaples = new Pizza();
+            pizzaNaples.CreatePizza(2, "Naples ", "Tomat , ost, ansjoser,og oliven", 79);
 
-            Pizza pizzaCalzone = new Pizza();
-            pizzaCalzone.CreatePizza(2, "Calzone pizza", "Lukket pizza med kødsovs", 105);
+            Pizza pizzaBigMamma = new Pizza();
+            pizzaBigMamma.CreatePizza(3, "Big mamma", "Tomat, gorgonzola, reje, apsparges og parma skinke", 90);
 
-            Pizza pizzaMexican = new Pizza();
-            pizzaMexican.CreatePizza(3, "Mexican pizza", "Chilli con carne med revet ost", 100);
+            string pizzacontadinastring = pizzaContadina.ToString();
+            string pizzanaplesstring = pizzaNaples.ToString();
+            string pizzabigmammastring = pizzaBigMamma.ToString();
 
-            string pizzakebabstring = pizzaKebab.ToString();
-            string pizzacalzonestring = pizzaCalzone.ToString();
-            string pizzamexicanstring = pizzaMexican.ToString();
-
-            //Customer anders = new Customer();
-            //anders.CustomerID = 1;
-            //anders.Name = "Anders";
-            //anders.Address = "Strandvejen 1";
-            //anders.PhoneNumber = 33445566;
 
             Customer anders = new Customer();
             anders.CreateCustomer(1, "Anders", "Strandvejen 1", 33445566);
@@ -45,31 +37,21 @@ namespace PizzaProject2
             Customer henrik = new Customer();
             henrik.CreateCustomer(3, "Henrik", "Svogerslev", 33448899);
 
-            
-
-
-            //Order order1 = new Order();
-            /*order1.OrderID = 1;
-            order1.Pizza = pizzaKebab;
-            order1.Customer = anders;
-            order1.Tax = 0.25;
-            order1.DeliveryCosts = 40; 
-            order1.TotalCosts = 0;*/
 
             Order order1 = new Order();
-            order1.CreateOrder(1, pizzaKebab, anders);
+            order1.CreateOrder(1, pizzaContadina, anders);
 
             Order order2 = new Order();
-            order2.CreateOrder(2, pizzaCalzone, juliette);
+            order2.CreateOrder(2, pizzaNaples, juliette);
 
             Order order3 = new Order();
-            order3.CreateOrder(3, pizzaMexican, henrik);
+            order3.CreateOrder(3, pizzaBigMamma, henrik);
 
 
 
             Console.WriteLine(anders);
             Console.WriteLine("");
-            Console.WriteLine(pizzakebabstring);
+            Console.WriteLine(pizzacontadinastring);
             Console.WriteLine("");
             Console.WriteLine(order1);
             Console.WriteLine("");
@@ -77,7 +59,7 @@ namespace PizzaProject2
 
             Console.WriteLine(juliette);
             Console.WriteLine("");
-            Console.WriteLine(pizzacalzonestring);
+            Console.WriteLine(pizzanaplesstring);
             Console.WriteLine("");
             Console.WriteLine(order2);
             Console.WriteLine("");
@@ -85,7 +67,7 @@ namespace PizzaProject2
 
             Console.WriteLine(henrik);
             Console.WriteLine("");
-            Console.WriteLine(pizzamexicanstring);
+            Console.WriteLine(pizzabigmammastring);
             Console.WriteLine("");
             Console.WriteLine(order3);
             Console.WriteLine("");
