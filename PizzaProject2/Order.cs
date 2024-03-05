@@ -25,7 +25,7 @@ namespace PizzaProject2
             _orderID = 0;
             _pizza = null;
             _customer = null;
-           _tax = 0.25;
+            _tax = 0.25;
             _deliveryCosts = 40;
             _totalCosts = 0;
             _taxOffTotalPrice = 0;  
