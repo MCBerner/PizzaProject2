@@ -34,13 +34,13 @@ namespace PizzaProject2
 
 
             Customer anders = new Customer();
-            anders.CreateCustomer(1, "Anders", "Strandvejen 1", 33445566);
+            anders.CreateCustomer(1, "Anders", "Strandvejen 1", "33445566");
 
             Customer juliette = new Customer();
-            juliette.CreateCustomer(2, "Juliette", "Sommerhuset", 33445678);
+            juliette.CreateCustomer(2, "Juliette", "Sommerhuset", "33445678");
 
             Customer henrik = new Customer();
-            henrik.CreateCustomer(3, "Henrik", "Svogerslev", 33448899);
+            henrik.CreateCustomer(3, "Henrik", "Svogerslev", "33448899");
 
 
             Order order1 = new Order();

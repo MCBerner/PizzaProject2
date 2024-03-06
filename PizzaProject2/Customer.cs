@@ -13,14 +13,14 @@ namespace PizzaProject2
         int _customerID;
         string _name;
         string _address;
-        int _phoneNumber;
+        string _phoneNumber;
 
         public Customer() 
         {
             _customerID = 0;
             _name = "";
             _address = "";
-            _phoneNumber = 0;
+            _phoneNumber = "";
         }
         public int CustomerID
         {
@@ -38,13 +38,13 @@ namespace PizzaProject2
             get { return _address; }
             set { _address = value; }
         }
-        public int PhoneNumber 
+        public string PhoneNumber 
         {
             get { return _phoneNumber; }
             set { _phoneNumber = value; }
 
         }
-        public void CreateCustomer(int customerID, string name, string address, int phoneNumber) 
+        public void CreateCustomer(int customerID, string name, string address, string phoneNumber) 
         {
             _customerID = customerID;
             _name = name;
